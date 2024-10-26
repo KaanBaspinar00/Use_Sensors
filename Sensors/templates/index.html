@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accelerometer Data Sender, Visualization & Video Recorder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Include Plotly.js from CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Accelerometer Data Sender, Visualization & Video Recorder</h1>
+        <p id="status">Status: Disconnected</p>
+
+        <!-- Data Sender Controls -->
+        <div id="senderControls">
+            <button id="connectBtn">Connect WebSocket</button>
+            <button id="startBtn" disabled>Start Acquisition</button>
+            <button id="stopBtn" disabled>Stop Acquisition</button>
+            <button id="saveBtn" disabled>Save Data</button>
+        </div>
+
+        <!-- Visualization Controls -->
+        <div id="visualizationControls">
+            <label for="xAxis">Select X-axis:</label>
+            <select id="xAxis">
+                <option value="timestamp">Timestamp (s)</option>
+                <option value="x">X-axis (m/s²)</option>
+                <option value="y">Y-axis (m/s²)</option>
+                <option value="z">Z-axis (m/s²)</option>
+            </select>
+
+            <label for="yAxis">Select Y-axis:</label>
+            <select id="yAxis">
+                <option value="x">X-axis (m/s²)</option>
+                <option value="y">Y-axis (m/s²)</option>
+                <option value="z">Z-axis (m/s²)</option>
+            </select>
+        </div>
+
+        <!-- Plotly Chart -->
+        <div id="accelChart"></div>
+
+        <!-- Video Recorder Controls and Display -->
+        <div id="videoContainer">
+            <h2>Camera Feed & Recording</h2>
+            <video id="cameraStream" autoplay muted></video>
+            <video id="recordedVideo" controls></video>
+            <div id="videoControls">
+                <button id="startVideoBtn" disabled>Start Recording</button>
+                <button id="stopVideoBtn" disabled>Stop Recording</button>
+                <button id="uploadVideoBtn" disabled>Upload & Save Video</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
