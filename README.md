@@ -18,14 +18,14 @@
 2) This will give you a link. For example:
    * Forwarding                    *https://abcdefgh.ngrok-free.app* -> http://localhost:8000
    * you will use this link: *https://abcdefgh.ngrok-free.app*  (It will be different for your case)
-
-3) Run Server.py (you may use python Server.py in terminal)
-4) Send the link to your phone and click to the link.
-5) Initiate the connection by pushing the "Connect Web Socket" button (in your phone)
-6) When you are ready, push the "Start Acquisition" button. It will collect accelerometer data in real time.
-7) Push "Stop Acquisition" button to stop the data acquisition.
-8) If you want to save it, you can click the "Save Data" button.
-9) If you want to record yourself, you can use "Start Recording", "Stop Recording" and "Upload & Save Video" buttons.
+3) Run "pip install -r requirments.txt" in terminal.
+4) Run Server.py (you may use python Server.py in terminal)
+5) Send the link to your phone and click to the link.
+6) Initiate the connection by pushing the "Connect Web Socket" button (in your phone)
+7) When you are ready, push the "Start Acquisition" button. It will collect accelerometer data in real time.
+8) Push "Stop Acquisition" button to stop the data acquisition.
+9) If you want to save it, you can click the "Save Data" button.
+10) If you want to record yourself, you can use "Start Recording", "Stop Recording" and "Upload & Save Video" buttons.
 
 ## Contact
 if you have questions, you can reach me via my email adress: 
