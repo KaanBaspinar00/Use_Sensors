@@ -1,11 +1,11 @@
 # Use_Sensors
 ## Install ngrok
 * for windows;
-* * choco install ngrok
+  * choco install ngrok
 * for MacOs;
-* * brew install ngrok/ngrok/ngrok
+  * brew install ngrok/ngrok/ngrok
 * for linux;
-* * snap install ngrok
+  * snap install ngrok
 * see more : https://ngrok.com/download
 
 ## After installation, 
